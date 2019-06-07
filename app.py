@@ -15,6 +15,14 @@ def hello():
     print('hello()')
     return "hello world"
 
+@app.route('/gdpr')
+def gdpr():
+    return """
+CZ: FloorbalBot schraňuje rozhodnutí o tvé účasti na floorbale. Chceš-li svá uživateská data získat nebo smazat, kontaktuj autora přes FB.
+EN: FloorbalBot stores decisions about your attendance at individual events of floorbal. To obtain/delete your data, please contact author via FB.
+Autor/Author: https://www.facebook.com/ondri.f
+    """
+
 
 #We will receive messages that Facebook sends our bot at this endpoint 
 @app.route("/", methods=['GET', 'POST'])
