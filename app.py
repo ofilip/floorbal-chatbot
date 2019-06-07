@@ -10,7 +10,7 @@ VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 bot = Bot(ACCESS_TOKEN)
 
 
-@app.rout('/hello')
+@app.route('/hello')
 def hello():
     return "hello world"
 
